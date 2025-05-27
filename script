@@ -1,0 +1,23 @@
+const idade = Number(prompt("Digite sua idade:"));
+const situacao = prompt("Informe se é Registrado ou Não Registrado:");
+
+const adulto = idade >= 18 ? "Você é maior de idade" : "Você é menor de idade.";
+    console.log(adulto)
+
+switch (situacao){
+    case "Registrado":
+        console.log("Bem-vindo ao sistema!");
+        break;
+    case "Não Registrado":
+        console.log("Por favor, complete seu registro.");
+        break;
+    default:
+        console.log("Status desconhecido.");
+        break;
+}
+
+if (idade >= 18 && situacao === "Registrado") {
+    console.log("Você tem acesso completo ao sistema.");
+} else {
+    console.log("Seu acesso é limitado.");
+}
